@@ -1,15 +1,15 @@
-<h1>We played rock!</h1>
+<h2>
+  We played rock!
+</h2>
 
-<% comp_move = ["rock", "paper", "scissors"].sample %>
+<h2>
+  They played <%= @comp_move1%>!
+</h2>
 
-<h1>
-  They played <%= comp_move %>
-</h1>
+<h2>
+  We <%= @outcome1%>!
+</h2>
 
-<% if comp_move == "rock" %>
-  <h2> We tied! </h2>
-<% elsif comp_move == "paper" %>
-  <h2> We lost! </h2>
-<% elsif comp_move == "scissor" %>
-  <h2> We won! </h2>
-<% end %>
+<div>
+  <a href="/">Rules</a>
+</div>
